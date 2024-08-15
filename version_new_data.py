@@ -25,4 +25,4 @@ subprocess.run(["git", "push"], check=True)
 # If everything above worked without issues, the training will start
 # I will try to figure out a way better than this today
 print("\n======== Online Training triggered ===================\n")
-subprocess.run(["python", "online_train.py"], check=True)
+subprocess.run(["python", "online_training.py"], check=True)
