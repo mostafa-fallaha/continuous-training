@@ -1,0 +1,4 @@
+[core]
+    remote = stream_drift
+['remote "stream_drift"']
+    url = gdrive://13g8hoEagnWwjaMn2Aj1yy8OX9h0FbR-j
