@@ -1,4 +1,5 @@
 param (
+    # Taking a Python script with the commit message
     [string]$pythonFile,
     [string]$commitMessage
 )

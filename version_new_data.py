@@ -1,7 +1,7 @@
 import subprocess
 import argparse
 
-# Parse CLI arguments
+# Getting the commit message from the cmd
 parser = argparse.ArgumentParser(description="Run DVC and Git commands.")
 parser.add_argument("commit_message", type=str, help="Commit message for Git")
 args = parser.parse_args()
@@ -23,6 +23,6 @@ subprocess.run(["dvc", "push"], check=True)
 subprocess.run(["git", "push"], check=True)
 
 # If everything above worked without issues, the training will start
-# I will try to figure out a way better than this today
-print("\n======== Online Training triggered ===================\n")
+# I will try to figure out a way better than this
+print("\n=================== Training triggered ===================\n")
 subprocess.run(["python", "model_training.py"], check=True)
