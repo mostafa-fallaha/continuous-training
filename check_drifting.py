@@ -57,6 +57,6 @@ def check_drift_all_features():
             false_count += 1
     
     if true_count > false_count:
-        return 0
-    else: 
         return 1
+    else: 
+        return 0
