@@ -21,7 +21,7 @@ results = check_drifting.check_drift_all_features()
 subprocess.run(["dvc", "add", data_file], check=True)
 subprocess.run(["git", "add", dvc_file, gitignore_file, 'run_versioning.ps1', 'version_new_data.py',
                 'generate_data.py', 'model_training.py', 'README.md', 'images/', '.dvc/config',
-                'check_drifting.py'], check=True)
+                'check_drifting.py', 'model/model.joblib', 'model/metric.pkl', 'model/previous_data_len.pkl'], check=True)
 
 subprocess.run(["git", "commit", "-m", commit_message], check=True)
 subprocess.run(["dvc", "push"], check=True)
