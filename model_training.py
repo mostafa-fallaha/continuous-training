@@ -14,6 +14,7 @@ warnings.filterwarnings('ignore')
 url = "https://github.com/mostafa-fallaha/continuous-training"
 data = dvc.api.read("data/new_data.csv", encoding='utf-8', repo=url)
 df = pd.read_csv(io.StringIO(data))
+print(df.shape)
 
 # Convert boolean columns to 0 and 1
 df['Free'] = df['Free'].replace({True: 1, False: 0})
